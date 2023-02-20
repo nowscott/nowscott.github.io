@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的主页</title>
+    <script src="./js/index.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" id="darkcss" href="./css/daytime.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-kYiyyqw6Uzt9R9Wj6UgALp/UTkST63bo+fRnWJNdczYfZBcfCQHy8/4W4fTY3ua1kNVfMzl7EBTuGmLbwQ7jYg==" crossorigin="anonymous" /> -->
+</head>
+
+<body backdrop-filter: blur(15px);>
+    <button id="darkbtn" class="daytime" title="夜间模式">
+        <img id="icon" src="./svg/sun.svg" />
+    </button>
+    <div class="html-container">
+        <h1 class="title-1">NowScott</h1>
+        <h2 class="title-2">Welcome to my home.</h2>
+        <div class="search-box">
+            <input class="search-in" id="s-in" type="text" placeholder="请输入关键词" />
+            <button class="search-btn" id="s-btn">🔍</button>
+        </div>
+        <h2 class="title-tags">选择标签</h2>
+        <div id="tags-container"></div>
+        <h2 class="title-webs">筛选网页</h2>
+        <div id="webs-container"></div>
+        <div class="social-icons">
+            <a target="_blank" href="https://space.bilibili.com/435359696?spm_id_from=333.1007.0.0"><img id="icon"
+                    src="./svg/bilibili.svg" /></a>
+            <a target="_blank" href="https://github.com/NowScott"><img id="icon" src="./svg/github.svg" /></a>
+            <a target="_blank" href="https://weibo.com/u/7817952696"><img id="icon" src="./svg/weibo.svg" /></a>
+            <a target="_blank" href="https://www.nowscott.top/pages/noweixin_qrcode/index.html" class="wechat"><img id="icon"
+                    src="./svg/weixin.svg" /><span class="qr-code"></a>
+            <a target="_blank" href="../pages/email/index.html" title="Email:nowscott@qq.com"><img id="icon" src="./svg/email.svg" /></a>
+        </div>
+    </div>
+</body>
+
+</html>
