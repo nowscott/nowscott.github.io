@@ -2,7 +2,7 @@ window.onload = function () {
     var sources
     var taglist = []
     var onlist = []
-    var url = "./source/sources.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
+    var url = "https://www.nowscott.top/home/source/sources.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
     var request = new XMLHttpRequest();
     function unique(arr) {/*数组去重方法的定义*/
         return Array.from(new Set(arr))
@@ -121,7 +121,7 @@ window.onload = function () {
                 n = s.name.toLowerCase()
                 b = s.brief.toLowerCase()
                 if (n.indexOf(keyword) !== -1 || b.indexOf(keyword) !== -1) {
-                    if(s.name != ''){
+                    if (s.name != '') {
                         reslist.push(s)
                     }
                 }
